@@ -6,6 +6,17 @@ api_key = "a6f81aff8e354cf14db2c448cbb27e5c"
 # URL of the background image
 
 
+hide_streamlit_cloud_elements = """
+    <style>
+    #MainMenu {visibility: hidden;}
+    header {visibility: hidden;}
+    footer {visibility: hidden;}
+    .stDeployButton {display: none;}
+    a[title="View source"] {display: none !important;}
+    button[kind="icon"] {display: none !important;}
+    </style>
+"""
+st.markdown(hide_streamlit_cloud_elements, unsafe_allow_html=True)
 # Inject custom CSS to set the background image
 def set_bg_from_local(image_file):
     with open(image_file, "rb") as image:
