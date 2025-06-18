@@ -65,7 +65,7 @@ def utc_to_local(utc_timestamp, offset_seconds):
 # MAIN APP
 def main():
     set_bg_from_local("images.jpg")
-    st.title("🌦️ Advanced Weather App")
+    st.title("🌦️Weather App")
 
     city = st.text_input("📍 Enter city name (or leave blank to detect your location)").strip()
 
